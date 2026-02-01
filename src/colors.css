@@ -1,0 +1,11 @@
+:root {
+    --background-color: #1e90ff;
+    --text-color: #ffffffb3;
+
+    /* --header-text: #fff; */
+    --header-line: #41414189;
+    --header-background: #41414125;
+
+    --header-background-hover: #bebebe89;
+    --header-text-hover: #171717;
+}

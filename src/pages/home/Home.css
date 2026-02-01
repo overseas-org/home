@@ -1,0 +1,113 @@
+.home {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.home .to-console {
+    position: absolute;
+    right: 4rem;
+    top: 1em;
+    /* padding: 1.3rem 3rem; */
+    border-radius: 30px;
+    background-color: transparent;
+    border: #aed5e8 5px solid;
+    color: #aed5e8;
+    font-size: 1.5rem;
+    font-weight: 900;
+    width: 13vw;
+    height: 9vh;
+    /* background: linear-gradient(90deg, #aed5e8 10%, #1b2156 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+.home .to-console:hover {
+    cursor: pointer;
+    background: linear-gradient(90deg, #aed5e8, #1b2156);
+    color: #1b2156;
+    /* font-size: 2srem; */
+    border: none;
+}
+
+.home .main-title {
+  font-size: 9rem;
+  position: absolute;
+  left: 6rem;
+  bottom: 9rem;
+  font-weight: 800;
+  font-style: oblique;
+  text-align: left;
+}
+
+.home .description {
+  white-space: pre-line;
+  text-align: left;
+  position: absolute;
+  left: 9rem;
+  bottom: 3rem;
+  font-size: 1.5rem;
+  font-style: oblique;
+  line-height: 5vh;
+  color: #aed5e8c8;
+}
+
+.home .gradient-text {
+  background: linear-gradient(90deg, #aed5e8, #1b2156);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home .typing {
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid var(--text-color); /* cursor */
+  width: 0;
+  animation: typing 1s steps(20, end) forwards,
+    stop-blink 1s forwards;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 80%; } /* number of characters */
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+@keyframes stop-blink {
+  from { border-right-color: var(--text-color); }
+  to   { border-right-color: transparent; }
+}
+
+
+
+@media (max-width: 400px) {
+  /* .App {
+    width: 400px;
+  } */
+
+  .home .main-title {
+    font-size: 3.5rem;
+    text-align: center;
+    width: 100%;
+    bottom: unset;
+    top: 4rem; 
+    left: 0;
+  }
+
+  .home .description {
+    left: 1rem;
+    font-size: 1rem;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 90%; } 
+}
+}

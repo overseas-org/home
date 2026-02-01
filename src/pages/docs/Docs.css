@@ -1,0 +1,10 @@
+
+.docs {
+    /* background-color: aqua; */
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    overflow: auto;
+    top: 0;
+    background: linear-gradient(1deg, #000000, #11111d);
+}

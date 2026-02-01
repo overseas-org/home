@@ -1,0 +1,79 @@
+
+
+.doc-navbar {
+    position: fixed;
+    height: 100%;
+    width: 12%;
+    min-width: 150px;
+    background-color: rgba(108, 108, 108, 0.188);
+    display: flex;
+    flex-direction: column;
+    padding-top: 6rem;
+}
+
+.doc-navbar .subject {
+    border-bottom: var(--text-color) 1px solid;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    /* position: relative; */
+}
+
+.doc-navbar .subject:hover {
+    cursor: pointer;
+}
+
+.doc-navbar .subject-main-line {
+    width: 100%;
+    align-items: start;
+    display: flex;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.doc-navbar .subject-main-line:hover {
+    background-color: rgba(240, 248, 255, 0.092);
+    /* color: var(--background-color); */
+}
+
+.doc-navbar .sub-subjects {
+    /* border: var(--text-color) 1px solid; */
+    /* margin-top: 1rem; */
+    margin-left: 30%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.doc-navbar .sub-subject {
+    display: flex;
+    align-items: start;
+    text-align: left;
+    padding: 0.5rem;
+    border-bottom: var(--text-color) 1px solid;
+    width: 70%;
+    box-sizing: border-box;
+
+}
+
+.doc-navbar .sub-subject:hover {
+    background-color: rgba(240, 248, 255, 0.092);
+    cursor: pointer;
+}
+
+.doc-navbar .collapse-button {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+
+}
+
+.doc-navbar .collapse-button:hover {
+    cursor: pointer;
+    background-color: rgba(240, 248, 255, 0.14);
+    border-radius: 7px;
+}
