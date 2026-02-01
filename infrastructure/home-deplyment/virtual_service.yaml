@@ -1,0 +1,19 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: home
+  namespace: overseas
+spec:
+  hosts:
+  - "overseas.dev"
+  gateways:
+  - overseas-gateway
+  http:
+  - match:
+    - uri:
+        prefix: "/"
+    route:
+    - destination:
+        host: home
+        port:
+          number: 80
