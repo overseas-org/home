@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Header pages={pages} setPage={SetCurrentPage}/> */}
+      <Header pages={pages} setPage={SetCurrentPage}/>
       {
         currentPage === "Home" && <Home/>
       }

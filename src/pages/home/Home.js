@@ -13,7 +13,7 @@ function Home() {
         <Spline style={{position: "absolute"}} scene="https://prod.spline.design/5JKZvXJq8yYHDh-o/scene.splinecode?v=14"/>
 
       }
-        {/* <button onClick={()=>{document.location.href="http://overseas.com/"}} className='to-console' onMouseEnter={()=>setConsoleHover(true)} onMouseLeave={()=>setConsoleHover(false)} >{consoleHover ? "→" : "To Console"}</button> */}
+        <button onClick={()=>{document.location.href="https://console.overseas.dev/"}} className='to-console' onMouseEnter={()=>setConsoleHover(true)} onMouseLeave={()=>setConsoleHover(false)} >{consoleHover ? "→" : "To Console"}</button>
         <h1 className='main-title typing gradient-text'>Overseas.</h1>
         <p className='description'>
             {"Microservices Management Platform. \
